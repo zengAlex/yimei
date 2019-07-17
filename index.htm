@@ -278,28 +278,27 @@
 
 	
 	<script src="jquery.min.js" tppabs="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
-	<script>
-	function IsPC(){  
-		var userAgentInfo = navigator.userAgent;
-		var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
-		var flag = true;  
-		for (var v = 0; v < Agents.length; v++) {  
-			if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
-		}  
-		return flag;  
-	}
-	console.info(IsPC());
-	if( IsPC() != true){
-		$(".flowtime").remove();
-		$("#hei").show();
-	}else{
-		$("#hei").hide();
-	}
-	</script>
 	<script src="all.min.js" ></script>
 	<script src="love.min.js" ></script>
 	<div class="mPower"><span id="on" title="点击暂停" style=""></span><span id="off" title="点击播放"  style=""></span></div>
-
+	<script>
+		function IsPC(){  
+			var userAgentInfo = navigator.userAgent;
+			var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+			var flag = true;  
+			for (var v = 0; v < Agents.length; v++) {  
+				if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+			}  
+			return flag;  
+		}
+		console.info(IsPC());
+		if( IsPC() != true){
+			$(".flowtime").remove();
+			$("#hei").show();
+		}else{
+			$("#hei").hide();
+		}
+		</script>
 	
 </body>
 </html>
