@@ -27,7 +27,7 @@
 	<div class="flowtime">
 		<div class="ft-section section-1" data-id="section-1">
 			<div id="/section-1/page-1" class="ft-page page-1" data-id="page-1">
-				<p class="text2">电脑按键盘 "↓" 手机“向上滑” <span id="text-78" contenteditable="true">Ms. Wang开始倾听他的直言</span></p>
+				<p class="text2">电脑按键盘 "↓" <span id="text-78" contenteditable="true">Ms. Wang开始倾听他的直言</span></p>
 			</div>
 			<div id="/section-1/page-2" class="ft-page page-2" data-id="page-2">
 				<p class="top-text" id="text-1" contenteditable="true">过去的他一直是一个人生活，享受着孤独，也憧憬着爱情。</p>
@@ -232,37 +232,23 @@
 			<div id="/section-8/page-2" class="ft-page page-47 top-text" data-id="page-2">
 				<img src="img/iali58.jpg" tppabs="img/iali58.jpg" />
 				<h3>
-					<span id="text-58" contenteditable="true">想想未来他们或许</span>
-                    <span id="text-59" contenteditable="true">会有一辈子</span>
+					<!-- <span id="text-58" contenteditable="true">想想未来他们或许</span>
+                    <span id="text-59" contenteditable="true">会有一辈子</span> -->
 					<span id="text-59" contenteditable="true">他好开心</span>
 					<span id="text-60" contenteditable="true">或许他可以和你一起</span>
 					<span id="text-61" contenteditable="true">去全世界好多地方玩</span></h3>
 				
 			</div>
-			<!-- <div id="/section-8/page-3" class="ft-page page-48 left-img" data-id="page-3">
-				<p><span id="text-62" contenteditable="true">他也会继续努力</span><br /><span id="text-63" contenteditable="true">为了他和你的梦之城堡</span></p>
-				<img src="img/iali65.jpg" tppabs="img/iali65.jpg"  />
-			</div> -->
-			<div id="/section-8/page-4" class="ft-page page-49 full-img" data-id="page-4">
-			<img src="img/iali71.jpg" tppabs="img/iali71.jpg" />
-				<p class="text">
-					<span class='text' id="text-64" contenteditable="true">他很幸福，因为他遇到了你。他相信后面的每天都会是快乐的</span><br />
-					<span class='text' id="text-65" contenteditable="true">简简单单，体会与你在一起的每一个刻</span>
-				</p>
+			<div id="/section-8/page-4" class="ft-page page-49 full-img top-text" data-id="page-4">
+				<p class='text' id="text-66" contenteditable="true">和你一起去经历，去走过</p>
+				<img src="img/iali71.jpg" tppabs="img/iali71.jpg" />
 			</div>
-			<!-- <div id="/section-8/page-5" class="ft-page page-50" data-id="page-5">
-				<p class='text' id="text-66" contenteditable="true">他想和你一起过幸福的生活</p>
+			<div id="/section-8/page-5" class="ft-page page-50" data-id="page-5">
+				<p class='text' style="top: 2em;" id="text-66" contenteditable="true">这个是我想表达的!</p>
+				<p class='text' id="text-66" contenteditable="true">希望你能感受到~</p>
 				<img src="img/iali50_1.jpg" tppabs="img/iali50_1.jpg" class='img1' />
 				<img src="img/iali50_2.jpg" tppabs="img/iali50_2.jpg" class='img2' />
-			</div> -->
-			<!-- <div id="/section-8/page-6" class="ft-page page-51" data-id="page-6">
-				<p>
-					<span id="text-67" contenteditable="true">永远有多远？</span><br />
-					<span id="text-68" contenteditable="true">比时间多一秒就是永远</span><br />
-					<span id="text-69" contenteditable="true">世界有多大？</span><br />
-					<span id="text-70" contenteditable="true">你走到哪里，世界就有多大</span>
-					</p>
-			</div> -->
+			</div>
 		</div>
 		<!-- <div class="ft-section section-9" data-id="section-9">
 			<div id="/section-9/page-1" class="ft-page page-52 full-img" data-id="page-1">
@@ -282,20 +268,31 @@
 					<span id="text-73" contenteditable="true">我相信，他和你的故事会一直继续下去。</span><br />
 					<span id="text-74" contenteditable="true">无论精彩、平淡都会是他们喜欢的。</span><br />
                     <span id="text-74" contenteditable="true">伊玫，我喜欢你，做我女朋友好吗！</span><br />
-					<br />
-					<br />
 					<span> -- 请按“Esc"键</span>
 				</p>				
 			</div>
 		</div> -->
 	</div>
-	<div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div>
-	
-
-	<audio id="bgmMusic" src="lovebgm.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio>
+	<!-- <div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div> -->
+	<div class="hei" style="width: 100%; height: 100%; position: absolute; z-index: 999; background: #ffffff; text-align: center; line-height: center;"><p style="margin-top: 50%">嘿~伊玫，在电脑打开他吧！</p></div>
+	<!-- <audio id="bgmMusic" src="lovebgm.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio> -->
 
 	
 	<script src="jquery.min.js" tppabs="http://libs.baidu.com/jquery/1.8.3/jquery.min.js"></script>
+	<script>
+	function IsPC(){  
+		var userAgentInfo = navigator.userAgent;
+		var Agents = new Array("Android", "iPhone", "SymbianOS", "Windows Phone", "iPad", "iPod");  
+		var flag = true;  
+		for (var v = 0; v < Agents.length; v++) {  
+			if (userAgentInfo.indexOf(Agents[v]) > 0) { flag = false; break; }  
+		}  
+		return flag;  
+	}
+	if( IsPC() != true){
+		$(".flowtime").remove();
+	}
+	</script>
 	<script src="all.min.js" ></script>
 	<script src="love.min.js" ></script>
 	<!-- <div class="mPower"><span id="on" title="点击暂停" style=""></span><span id="off" title="点击播放"  style=""></span></div> -->
