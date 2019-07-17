@@ -27,7 +27,7 @@
 	<div class="flowtime">
 		<div class="ft-section section-1" data-id="section-1">
 			<div id="/section-1/page-1" class="ft-page page-1" data-id="page-1">
-				<p class="text2">电脑按键盘 "↓" <span id="text-78" contenteditable="true">Ms. Wang开始倾听他的直言</span></p>
+				<p class="text2">电脑按键盘 "↓" <span id="text-78" contenteditable="true">Ms. Wang 以下是我想说的</span></p>
 			</div>
 			<div id="/section-1/page-2" class="ft-page page-2" data-id="page-2">
 				<p class="top-text" id="text-1" contenteditable="true">过去的他一直是一个人生活，享受着孤独，也憧憬着爱情。</p>
@@ -274,7 +274,7 @@
 		</div> -->
 	</div>
 	<!-- <div class="nojavascript">您的浏览器禁用了javascript，无法正常浏览本页面</div> -->
-	<div class="hei" style="width: 100%; height: 100%; position: absolute; z-index: 999; background: #ffffff; text-align: center; line-height: center;"><p style="margin-top: 50%">嘿~伊玫，在电脑打开它吧！</p></div>
+	<div id="hei" style="width: 100%; height: 100%; position: absolute; z-index: 9999; background: #ffffff; text-align: center; line-height: center;"><p style="display: block;margin-top: 300px; height: 100%;">嘿~伊玫，在电脑打开它吧！</p></div>
 	<!-- <audio id="bgmMusic" src="lovebgm.mp3" autoplay="autoplay" loop preload="auto" type="audio/mp3"></audio> -->
 
 	
@@ -289,8 +289,11 @@
 		}  
 		return flag;  
 	}
+	console.info(IsPC());
 	if( IsPC() != true){
-		$(".flowtime").remove();
+		$("#hei").show();
+	}else{
+		$("#hei").hide();
 	}
 	</script>
 	<script src="all.min.js" ></script>
